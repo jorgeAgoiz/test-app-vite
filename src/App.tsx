@@ -2,27 +2,34 @@ import React, { useState } from 'react'
 import { Button, Container, Row } from 'react-bootstrap'
 
 interface State {
-  count: number
+  count: number;
 }
 
 function App() {
-  const [ count, setCount ] = useState<State['count']>(0)
+	const [ count, setCount ] = useState<State['count']>(0)
 
-  return (
-    <Container className='App'>
-      <Row>
-        <p>{count}</p>
-      </Row>
-      <Row md={2}>
-        <Button onClick={() => setCount(count + 1)} size='sm' variant='success'>
+	const addCount = () => {
+		setCount(count + 1)
+	}
+	const substractCount = () => {
+		setCount(count - 1)
+	}
+
+	return (
+		<Container className='App'>
+			<Row>
+				<p>{count}</p>
+			</Row>
+			<Row md={2}>
+				<Button onClick={addCount} size='sm' variant='success'>
           Add
-        </Button>
-        <Button onClick={() => setCount(count - 1)} size='sm' variant='warning'>
+				</Button>
+				<Button onClick={substractCount} size='sm' variant='warning'>
           Substract
-        </Button>
-      </Row>
-    </Container>
-  )
+				</Button>
+			</Row>
+		</Container>
+	)
 }
 
 export default App
