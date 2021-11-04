@@ -8,18 +8,17 @@ const App = (): JSX.Element => {
 	return (
 		<Container className='App'>
 			<Header />
-			<Row xs={1} md={1} lg={2} xl={2} className="g-4 mt-2 justify-content-center">
-				<Col>
-					<Card bg='warning' >
+			<Row xs={1} md={2} lg={2} xl={2} className="g-4 mt-1 justify-content-center">
+				<Col md={10} lg={8} xl={8}>
+					<Card bg='dark' className='text-light' >
 						<Card.Img 
 							variant="top"
 							src="../images/mainPic.jpg" 
 						/>
-						<Card.Body>
-							<Card.Title>API PREGUNTAS TRIVIA</Card.Title>
+						<Card.Body className='text-center'>
+							<Card.Title className='fst-italic'>API PREGUNTAS TRIVIA</Card.Title>
 							<Card.Text>
-            This is a longer card with supporting text below as a natural
-            lead-in to additional content. This content is a little bit longer.
+								API de preguntas estilo trivial en castellano. Solicita una API key y empieza a disfrutar de ella.
 							</Card.Text>
 						</Card.Body>
 					</Card>

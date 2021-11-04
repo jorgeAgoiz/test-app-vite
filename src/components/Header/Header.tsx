@@ -5,25 +5,28 @@ const Header = (): JSX.Element => {
 
 	return (
 		<Row>
-			<Navbar bg="dark" variant="dark">
+			<Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
 				<Container>
 					<Navbar.Brand className='mb-2'>
 						QuizQuestions API
 					</Navbar.Brand>
-					<Nav className="justify-content-end">
-						<Nav.Link className='me-3' href="/">
+					<Navbar.Toggle aria-controls="responsive-navbar-nav" />
+					<Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
+						<Nav>
+							<Nav.Link className='me-3' href="/">
 								Inicio
-						</Nav.Link>
-						<Nav.Link className='me-3' href="/documentation">
+							</Nav.Link>
+							<Nav.Link className='me-3' href="/documentation">
 								Documentación
-						</Nav.Link>
-						<Nav.Link className='me-3' href="/suscribe">
+							</Nav.Link>
+							<Nav.Link className='me-3' href="/suscribe">
 								Suscribirte
-						</Nav.Link>
-						<Nav.Link className='ms-3' href="/contact">
+							</Nav.Link>
+							<Nav.Link className='me-3' href="/contact">
 								Contacto
-						</Nav.Link>
-					</Nav>
+							</Nav.Link>
+						</Nav>
+					</Navbar.Collapse>
 				</Container>
 			</Navbar>
 		</Row>
