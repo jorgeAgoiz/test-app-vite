@@ -31,3 +31,5 @@ const Header = (): JSX.Element => {
 }
 
 export default Header
+
+/* Una cosa que quiero hacer es añadir configuración al eslint para ignorar ciertas longiduted de linea permitidas */
