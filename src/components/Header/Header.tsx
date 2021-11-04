@@ -7,12 +7,20 @@ const Header = (): JSX.Element => {
 		<Row>
 			<Navbar bg="dark" variant="dark">
 				<Container>
-					<Navbar.Brand href="#home">GiorgioBlog</Navbar.Brand>
+					<Navbar.Brand className='mb-2'>
+						QuizQuestions API
+					</Navbar.Brand>
 					<Nav className="justify-content-end">
-						<Nav.Link className='me-3' href="#home">
+						<Nav.Link className='me-3' href="/">
 								Inicio
 						</Nav.Link>
-						<Nav.Link className='ms-3' href="#features">
+						<Nav.Link className='me-3' href="/documentation">
+								Documentación
+						</Nav.Link>
+						<Nav.Link className='me-3' href="/suscribe">
+								Suscribirte
+						</Nav.Link>
+						<Nav.Link className='ms-3' href="/contact">
 								Contacto
 						</Nav.Link>
 					</Nav>

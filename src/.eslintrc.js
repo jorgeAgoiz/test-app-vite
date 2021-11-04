@@ -28,7 +28,7 @@ module.exports = {
 		'arrow-parens': [ 'error', 'as-needed' ],
 		'comma-spacing': [ 'error', { 'before': false, 'after': true } ],
 		'array-bracket-spacing': [ 'error', 'always' ],
-		'max-len': [ 'error', { 'code': 80, 'ignoreUrls': false } ],
+		'max-len': [ 'error', { 'code': 2200, 'ignoreUrls': false } ],
 		'indent': [ 'error', 'tab' ]
 	}
 }
