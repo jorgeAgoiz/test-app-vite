@@ -7,7 +7,7 @@ const Home = () => {
 		<>
 			<Row xs={1} md={2} lg={2} xl={2} className="g-4 mt-1 justify-content-center">
 				<Col md={10} lg={8} xl={8}>
-					<Card bg='dark' className='text-light' >
+					<Card bg='primary' className='text-light' >
 						<Card.Img 
 							variant="top"
 							src="../images/mainPic.jpg" 

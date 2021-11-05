@@ -7,7 +7,7 @@ const Header = (): JSX.Element => {
 
 	return (
 		<Row>
-			<Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
+			<Navbar collapseOnSelect expand="md" bg="primary" variant="dark">
 				<Container>
 					<Navbar.Brand className='mb-2'>
 						QuizQuestions API
