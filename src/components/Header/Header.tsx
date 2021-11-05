@@ -1,7 +1,9 @@
 import React from 'react'
 import { Row, Navbar, Container, Nav } from 'react-bootstrap'
+import { useLocation } from 'wouter'
 
 const Header = (): JSX.Element => {
+	const [ location, setLocation ] = useLocation()
 
 	return (
 		<Row>
@@ -13,16 +15,16 @@ const Header = (): JSX.Element => {
 					<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 					<Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
 						<Nav>
-							<Nav.Link className='me-3' href="/">
+							<Nav.Link className='me-3' onClick={() => setLocation('/')}>
 								Inicio
 							</Nav.Link>
-							<Nav.Link className='me-3' href="/documentation">
+							<Nav.Link className='me-3' onClick={() => setLocation('/documentation')}>
 								Documentación
 							</Nav.Link>
-							<Nav.Link className='me-3' href="/suscribe">
+							<Nav.Link className='me-3' onClick={() => setLocation('/suscribe')}>
 								Suscribirte
 							</Nav.Link>
-							<Nav.Link className='me-3' href="/contact">
+							<Nav.Link className='me-3' onClick={() => setLocation('/contact')}>
 								Contacto
 							</Nav.Link>
 						</Nav>
