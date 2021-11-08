@@ -10,12 +10,12 @@ const Home = () => {
 					<Card bg='primary' className='text-light' >
 						<Card.Img 
 							variant="top"
-							src="../images/mainPic.jpg" 
+							src="../images/main-image-question.jpg" 
 						/>
 						<Card.Body className='text-center'>
-							<Card.Title className='fst-italic'>API PREGUNTAS TRIVIA</Card.Title>
+							<Card.Title className='fst-italic'>QuizQuestions API</Card.Title>
 							<Card.Text>
-								API de preguntas estilo trivial en castellano. Solicita una API key y empieza a disfrutar de ella.
+								API de preguntas y respuestas en castellano. Solicita una API key y empieza a disfrutar de ella.
 							</Card.Text>
 						</Card.Body>
 					</Card>

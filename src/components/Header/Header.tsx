@@ -18,14 +18,11 @@ const Header = (): JSX.Element => {
 							<Nav.Link className='me-3' onClick={() => setLocation('/')}>
 								Inicio
 							</Nav.Link>
-							<Nav.Link className='me-3' onClick={() => setLocation('/documentation')}>
-								Documentación
+							<Nav.Link className='me-3' href="https://jorgeagoiz.github.io/quizQuestions-REST_API/index.html">
+									Documentación
 							</Nav.Link>
 							<Nav.Link className='me-3' onClick={() => setLocation('/suscribe')}>
 								Suscribirte
-							</Nav.Link>
-							<Nav.Link className='me-3' onClick={() => setLocation('/contact')}>
-								Contacto
 							</Nav.Link>
 						</Nav>
 					</Navbar.Collapse>
