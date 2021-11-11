@@ -7,7 +7,7 @@ const Header = (): JSX.Element => {
 
 	return (
 		<Row>
-			<Navbar collapseOnSelect expand="md" bg="primary" variant="dark">
+			<Navbar collapseOnSelect expand="md" bg="primary" variant="dark" fixed='top'>
 				<Container>
 					<Navbar.Brand className='mb-2'>
 						QuizQuestions API
@@ -33,5 +33,3 @@ const Header = (): JSX.Element => {
 }
 
 export default Header
-
-/* Una cosa que quiero hacer es añadir configuración al eslint para ignorar ciertas longiduted de linea permitidas */
