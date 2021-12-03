@@ -18,7 +18,7 @@ const Header = (): JSX.Element => {
 							<Nav.Link className='me-3' onClick={() => setLocation('/')}>
 								Inicio
 							</Nav.Link>
-							<Nav.Link className='me-3' href="https://jorgeagoiz.github.io/quizQuestions-REST_API/index.html">
+							<Nav.Link className='me-3' onClick={() => setLocation('/docs')}>
 									Documentación
 							</Nav.Link>
 							<Nav.Link className='me-3' onClick={() => setLocation('/suscribe')}>
