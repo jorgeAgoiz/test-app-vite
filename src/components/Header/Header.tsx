@@ -3,6 +3,7 @@ import { Row, Navbar, Container, Nav } from 'react-bootstrap'
 import { useLocation } from 'wouter'
 
 const Header = (): JSX.Element => {
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	const [ location, setLocation ] = useLocation()
 
 	return (

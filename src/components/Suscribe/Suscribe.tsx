@@ -14,10 +14,10 @@ const Suscribe = ():JSX.Element => {
 			<Row className='d-flex justify-content-center mt-5'>
 				<Form className='mt-5 text-center col-4 ' onSubmit={onHandleSubmit}>
 					<Form.Group className="mb-3" controlId="formBasicEmail">
-						<Form.Label>Email</Form.Label>
+						<Form.Label><strong>Email</strong></Form.Label>
 						<Form.Control type="email" name='email' placeholder="Introduce tu email..." />
 						<Form.Text className="text-muted">
-							Introduce tu email para que te mandemos una API Key...
+							<em>Suscribete y consigue tu API KEY</em>
 						</Form.Text>
 					</Form.Group>
 					<Button variant="success" type="submit">
