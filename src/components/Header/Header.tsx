@@ -10,7 +10,7 @@ const Header = (): JSX.Element => {
 			<Navbar collapseOnSelect expand="md" bg="primary" variant="dark" fixed='top'>
 				<Container>
 					<Navbar.Brand className='mb-2'>
-						QuizQuestions API
+						<strong>QuizQuestions API</strong>
 					</Navbar.Brand>
 					<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 					<Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
