@@ -7,9 +7,9 @@ const Suscribe = ():JSX.Element => {
 	const onHandleSubmit = async (evt: React.FormEvent<HTMLFormElement>) => {
 		evt.preventDefault()
 		const email: string = evt.currentTarget.email.value
-		console.log(`El email introducido es: ${email}`)
 		const signed = await getKey(email)
 		console.log(signed)
+		/* Depende de la respuesta hacemos una cosa o otra */
 	}
 
 	return (
