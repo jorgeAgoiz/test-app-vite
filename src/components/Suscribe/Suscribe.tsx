@@ -1,11 +1,15 @@
 import React from 'react'
 import { Button, Form, Row } from 'react-bootstrap'
+import { getKey } from '../../services/getKey'
 
 const Suscribe = ():JSX.Element => {
 
-	const onHandleSubmit = (evt: React.FormEvent<HTMLFormElement>):void => {
+	const onHandleSubmit = async (evt: React.FormEvent<HTMLFormElement>) => {
 		evt.preventDefault()
-		console.log(`El email introducido es: ${evt.currentTarget.email.value}`)
+		const email: string = evt.currentTarget.email.value
+		console.log(`El email introducido es: ${email}`)
+		const signed = await getKey(email)
+		console.log(signed)
 	}
 
 	return (
